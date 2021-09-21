@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_09_18_092103) do
+ActiveRecord::Schema.define(version: 2021_09_18_110241) do
 
   create_table "restaurants", force: :cascade do |t|
     t.string "title"
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(version: 2021_09_18_092103) do
     t.text "details"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.boolean "completed"
     t.boolean "#<ActiveRecord::ConnectionAdapters::SQLite3::TableDefinition:0x00007fb7523a0500>"
+    t.boolean "completed", default: false
   end
 
 end
